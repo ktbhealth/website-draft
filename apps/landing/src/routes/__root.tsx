@@ -82,7 +82,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 								{m.nav_vision()}
 							</a>
 							<a
-								href="https://github.com/ktbhealth/ktbhealth"
+								href="https://github.com/ktbhealth/product"
 								target="_blank"
 								rel="noreferrer"
 								className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition hover:bg-muted hover:text-foreground"

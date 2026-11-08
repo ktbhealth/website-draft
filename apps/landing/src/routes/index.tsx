@@ -4,7 +4,7 @@ import * as m from "#/paraglide/messages.js";
 
 export const Route = createFileRoute("/")({ component: Landing });
 
-const REPO_URL = "https://github.com/ktbhealth/ktbhealth";
+const REPO_URL = "https://github.com/ktbhealth/product";
 
 function Landing() {
 	return (
