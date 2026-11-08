@@ -2,3 +2,7 @@
 
 /* The shared globals only @source apps/web; scan this app too. */
 @source "./**/*.{ts,tsx}";
+
+/* @ktbhealth/ui is a node_modules git dependency — automatic content
+   detection ignores node_modules, so scan its sources explicitly. */
+@source "../node_modules/@ktbhealth/ui/packages/react/src";
