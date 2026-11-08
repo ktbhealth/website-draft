@@ -1,4 +1,5 @@
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { BookPlusIcon } from "lucide-react";
 import * as m from "#/paraglide/messages.js";
 import { getLocale, locales, setLocale } from "#/paraglide/runtime.js";
 import appCss from "../styles.css?url";
@@ -32,8 +33,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
 					<nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
 						<a href="#" className="flex items-center gap-2.5">
-							<span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-xs font-bold text-white shadow-sm">
-								KTB
+							<span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
+								<BookPlusIcon className="size-5" />
 							</span>
 							<span className="text-lg font-bold tracking-tight">{m.nav_brand()}</span>
 						</a>
