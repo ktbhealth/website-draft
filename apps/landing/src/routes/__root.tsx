@@ -12,11 +12,34 @@ export const Route = createRootRoute({
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
 			{ title: m.meta_title() },
 			{ name: "description", content: m.meta_description() },
+			{ property: "og:type", content: "website" },
+			{ property: "og:title", content: m.meta_title() },
+			{ property: "og:description", content: m.meta_description() },
+			{ name: "theme-color", content: "#5d87c8" },
 		],
-		links: [{ rel: "stylesheet", href: appCss }],
+		links: [
+			{ rel: "stylesheet", href: appCss },
+			{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+		],
 	}),
+	notFoundComponent: NotFound,
 	shellComponent: RootDocument,
 });
+
+function NotFound() {
+	return (
+		<main className="mx-auto flex max-w-6xl flex-col items-center px-6 py-32 text-center">
+			<h1 className="text-4xl font-bold tracking-tight">{m.not_found_title()}</h1>
+			<p className="mt-4 max-w-md text-muted-foreground">{m.not_found_body()}</p>
+			<a
+				href="/"
+				className="mt-8 text-sm font-medium text-primary underline-offset-4 hover:underline"
+			>
+				{m.not_found_cta()}
+			</a>
+		</main>
+	);
+}
 
 const LOCALE_NAME: Record<string, string> = {
 	en: "English",
