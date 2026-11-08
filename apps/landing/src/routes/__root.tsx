@@ -1,7 +1,7 @@
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { BookPlusIcon } from "lucide-react";
 import * as m from "#/paraglide/messages.js";
-import { getLocale, locales, setLocale } from "#/paraglide/runtime.js";
+import { getLocale, locales, setLocale, toLocale } from "#/paraglide/runtime.js";
 import { LanguageToggle } from "@ktbhealth/ui/components/language-toggle";
 import appCss from "../styles.css?url";
 
@@ -70,7 +70,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 								className="ml-2"
 								locales={locales}
 								value={getLocale()}
-								onValueChange={(locale) => setLocale(locale)}
+								onValueChange={(locale) => {
+									const resolved = toLocale(locale);
+									if (resolved) setLocale(resolved);
+								}}
 								labels={LOCALE_NAME}
 								label={m.lang_toggle_label()}
 							/>
