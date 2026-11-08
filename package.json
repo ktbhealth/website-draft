@@ -12,14 +12,22 @@
     "check": "vp check",
     "lint": "vp lint",
     "format": "vp fmt",
-    "test": "vp test"
+    "test": "vp test",
+    "infra:dev": "alchemy dev",
+    "infra:deploy": "cuora run --config cuora.toml -- alchemy deploy -y",
+    "infra:destroy": "alchemy destroy",
+    "plan": "cuora run --config cuora.toml -- alchemy plan",
+    "deploy": "cuora run --config cuora.toml -- alchemy deploy -y"
   },
   "dependencies": {
+    "@alchemy.run/cloudflare": "2.0.0-beta.85",
+    "@effect/platform-node": "4.1.2",
     "@inlang/paraglide-js": "2.29.3",
     "@ktbhealth/ui": "github:ktbhealth/ui#v0.1.0@react",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-router": "1.170.46",
     "@tanstack/react-start": "1.169.4",
+    "alchemy": "2.0.0-beta.85",
     "effect": "4.1.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
