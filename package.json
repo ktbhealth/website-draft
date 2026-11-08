@@ -22,13 +22,13 @@
 	},
 	"devDependencies": {
 		"@alchemy.run/cloudflare": "2.0.0-beta.85",
+		"@ktb/infra-cloudflare": "workspace:*",
 		"@types/node": "^22.10.2",
 		"alchemy": "2.0.0-beta.85",
 		"effect": "4.1.2",
 		"typescript": "^6.0.2",
 		"vite-plus": "1.5.0",
-		"vitest": "5.1.0",
-		"@ktb/infra-cloudflare": "workspace:*"
+		"vitest": "5.1.0"
 	},
 	"packageManager": "bun@1.4.4"
 }
