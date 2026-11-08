@@ -89,11 +89,12 @@ function Landing() {
 					<h2 className="text-sm font-semibold tracking-wide text-primary uppercase">
 						{m.principles_title()}
 					</h2>
-					<div className="mt-10 grid gap-6 sm:grid-cols-3">
+					<div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 						{[
 							[m.principle1_title(), m.principle1_body()],
 							[m.principle2_title(), m.principle2_body()],
 							[m.principle3_title(), m.principle3_body()],
+							[m.principle4_title(), m.principle4_body()],
 						].map(([title, body]) => (
 							<div key={title} className="rounded-xl border border-border bg-card p-5 shadow-sm">
 								<h3 className="text-base font-semibold">{title}</h3>

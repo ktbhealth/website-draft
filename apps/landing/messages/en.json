@@ -37,6 +37,8 @@
 	"principle2_body": "Patient consent before capture, compute on-device whenever possible, and synthetic data in every demo.",
 	"principle3_title": "Built for Brazil",
 	"principle3_body": "PT-BR clinical language, local anamnesis structure, and workflows that match how Brazilian physicians actually practice.",
+	"principle4_title": "Channel-agnostic",
+	"principle4_body": "Works alongside whatever channel the consultation already uses — exam room, any telehealth app, phone call — no lock-in and no workflow change.",
 	"who_title": "Who it is for",
 	"who_body": "Physicians running teleconsultations or in-person visits who want their time back. Built for the Brazilian healthcare context first, with B2C self-serve for individual doctors.",
 	"vision_title": "Vision",

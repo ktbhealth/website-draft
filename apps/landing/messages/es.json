@@ -37,6 +37,8 @@
 	"principle2_body": "Consentimiento del paciente antes de capturar, cómputo en el dispositivo siempre que sea posible y datos sintéticos en cada demo.",
 	"principle3_title": "Hecho para Brasil",
 	"principle3_body": "Lenguaje clínico en PT-BR, estructura de anamnesis local y flujos que reflejan cómo practica realmente el médico brasileño.",
+	"principle4_title": "Independiente del canal",
+	"principle4_body": "Funciona junto al canal que la consulta ya usa — consultorio, cualquier app de telemedicina, teléfono — sin dependencia ni cambios en el flujo de trabajo.",
 	"who_title": "Para quién es",
 	"who_body": "Médicos que hacen teleconsultas o atención presencial y quieren recuperar su tiempo. Construido primero para el contexto de salud brasileño, con modelo self-serve B2C para médicos individuales.",
 	"vision_title": "Visión",
