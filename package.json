@@ -1,47 +1,34 @@
 {
-  "name": "@ktb/website-draft",
-  "private": true,
-  "type": "module",
-  "imports": {
-    "#/*": "./src/*"
-  },
-  "scripts": {
-    "dev": "vp dev --port 3001",
-    "build": "vp build",
-    "preview": "vp preview",
-    "check": "vp check",
-    "lint": "vp lint",
-    "format": "vp fmt",
-    "test": "vp test",
-    "infra:dev": "alchemy dev",
-    "infra:deploy": "cuora run --config cuora.toml -- alchemy deploy -y",
-    "infra:destroy": "alchemy destroy",
-    "plan": "cuora run --config cuora.toml -- alchemy plan",
-    "deploy": "cuora run --config cuora.toml -- alchemy deploy -y"
-  },
-  "dependencies": {
-    "@alchemy.run/cloudflare": "2.0.0-beta.85",
-    "@effect/platform-node": "4.1.2",
-    "@inlang/paraglide-js": "2.29.3",
-    "@ktbhealth/ui": "github:ktbhealth/ui#v0.1.0@react",
-    "@tailwindcss/vite": "^4.1.18",
-    "@tanstack/react-router": "1.170.46",
-    "@tanstack/react-start": "1.169.4",
-    "alchemy": "2.0.0-beta.85",
-    "effect": "4.1.2",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.18"
-  },
-  "devDependencies": {
-    "@effect/platform-bun": "4.1.2",
-    "@types/node": "^22.10.2",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "@vitejs/plugin-react": "^6.0.1",
-    "typescript": "^6.0.2",
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.5.0",
-    "vite-plus": "1.5.0"
-  },
-  "packageManager": "bun@1.4.4"
+	"name": "ktb-website",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"infra/*"
+	],
+	"type": "module",
+	"scripts": {
+		"dev": "vp -C apps/landing dev --port 3001",
+		"build": "vp -C apps/landing build",
+		"preview": "vp -C apps/landing preview",
+		"check": "vp check",
+		"lint": "vp lint",
+		"format": "vp fmt",
+		"test": "vp test",
+		"plan": "cuora run --config cuora.toml -- alchemy plan",
+		"deploy": "cuora run --config cuora.toml -- alchemy deploy -y",
+		"infra:dev": "alchemy dev",
+		"infra:deploy": "cuora run --config cuora.toml -- alchemy deploy -y",
+		"infra:destroy": "alchemy destroy"
+	},
+	"devDependencies": {
+		"@alchemy.run/cloudflare": "2.0.0-beta.85",
+		"@types/node": "^22.10.2",
+		"alchemy": "2.0.0-beta.85",
+		"effect": "4.1.2",
+		"typescript": "^6.0.2",
+		"vite-plus": "1.5.0",
+		"vitest": "5.1.0",
+		"@ktb/infra-cloudflare": "workspace:*"
+	},
+	"packageManager": "bun@1.4.4"
 }

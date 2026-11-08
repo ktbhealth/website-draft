@@ -23,11 +23,5 @@ preview = { vault = "ktb" }
 prod = { vault = "ktb" }
 
 [secrets]
-# Note: `cuora run` requires every declared ref to resolve. Keep
-# cf-api-token commented until you `cuora put` it — the alchemy
-# profile already covers deploys.
-# CLOUDFLARE_API_TOKEN = "cuora://ktb/cf-api-token"
-BETTER_AUTH_SECRET = "cuora://ktb/better-auth-secret"
-BETTER_AUTH_URL = "cuora://ktb/better-auth-url"
-TURNSTILE_SECRET_KEY = "cuora://ktb/turnstile-secret-key"
-VITE_TURNSTILE_SITE_KEY = "cuora://ktb/turnstile-site-key"
+# The static site needs no app secrets. Cloudflare credentials come from
+# the alchemy profile / CUORA_CF_TOKEN vault tokens above.
