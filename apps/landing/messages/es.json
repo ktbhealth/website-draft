@@ -43,5 +43,6 @@
 	"vision_body": "Más allá de la transcripción: una plataforma de documentación que conecta consultas, registros e historial del paciente a lo largo del tiempo. El nombre KTB Health viene de la raíz árabe K-T-B, asociada a la escritura, los libros y la preservación del conocimiento.",
 	"footer_tagline": "Proyecto en borrador construido para Hack Brasil 2026.",
 	"footer_repo": "Código en GitHub",
-	"footer_disclaimer": "Las demos usan solo datos sintéticos de pacientes."
+	"footer_disclaimer": "Las demos usan solo datos sintéticos de pacientes.",
+	"lang_toggle_label": "Idioma"
 }

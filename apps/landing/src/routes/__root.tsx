@@ -2,6 +2,7 @@ import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { BookPlusIcon } from "lucide-react";
 import * as m from "#/paraglide/messages.js";
 import { getLocale, locales, setLocale } from "#/paraglide/runtime.js";
+import { LanguageToggle } from "@ktbhealth/ui/components/language-toggle";
 import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
@@ -17,10 +18,10 @@ export const Route = createRootRoute({
 	shellComponent: RootDocument,
 });
 
-const LOCALE_LABEL: Record<string, string> = {
-	en: "EN",
-	"pt-BR": "PT",
-	es: "ES",
+const LOCALE_NAME: Record<string, string> = {
+	en: "English",
+	"pt-BR": "Português",
+	es: "Español",
 };
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -65,22 +66,14 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 							>
 								{m.nav_repo()}
 							</a>
-							<div className="ml-2 flex items-center rounded-lg border border-border p-0.5">
-								{locales.map((locale) => (
-									<button
-										key={locale}
-										type="button"
-										onClick={() => setLocale(locale)}
-										className={`rounded-md px-2 py-1 text-xs font-semibold transition ${
-											getLocale() === locale
-												? "bg-primary text-primary-foreground"
-												: "text-muted-foreground hover:text-foreground"
-										}`}
-									>
-										{LOCALE_LABEL[locale] ?? locale}
-									</button>
-								))}
-							</div>
+							<LanguageToggle
+								className="ml-2"
+								locales={locales}
+								value={getLocale()}
+								onValueChange={(locale) => setLocale(locale)}
+								labels={LOCALE_NAME}
+								label={m.lang_toggle_label()}
+							/>
 						</div>
 					</nav>
 				</header>
