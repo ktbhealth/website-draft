@@ -14,11 +14,11 @@
 		"lint": "vp lint",
 		"format": "vp fmt",
 		"test": "vp test",
-		"plan": "cuora run --config cuora.toml -- alchemy plan",
-		"deploy": "cuora run --config cuora.toml -- alchemy deploy -y",
+		"plan": "cuora run --env prod --config cuora.toml -- alchemy plan --stage prod",
+		"deploy": "cuora run --env prod --config cuora.toml -- alchemy deploy --stage prod -y",
 		"infra:dev": "alchemy dev",
-		"infra:deploy": "cuora run --config cuora.toml -- alchemy deploy -y",
-		"infra:destroy": "alchemy destroy"
+		"infra:deploy": "cuora run --env prod --config cuora.toml -- alchemy deploy --stage prod -y",
+		"infra:destroy": "alchemy destroy --stage prod"
 	},
 	"devDependencies": {
 		"@alchemy.run/cloudflare": "2.0.0-beta.85",
