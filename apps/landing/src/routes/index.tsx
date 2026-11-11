@@ -17,6 +17,10 @@ function Landing() {
 				<h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
 					{m.hero_title()}
 				</h1>
+				<div className="mt-6 border-l-4 border-primary pl-5">
+					<p className="text-xl font-semibold sm:text-2xl">{m.hero_quote_1()}</p>
+					<p className="text-xl font-semibold text-primary sm:text-2xl">{m.hero_quote_2()}</p>
+				</div>
 				<p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
 					{m.hero_subtitle()}
 				</p>
@@ -56,6 +60,9 @@ function Landing() {
 							</div>
 						))}
 					</dl>
+					<p className="mt-6 max-w-4xl text-xs leading-relaxed text-muted-foreground">
+						{m.problem_source()}
+					</p>
 				</div>
 			</section>
 
@@ -119,6 +126,10 @@ function Landing() {
 							{m.vision_title()}
 						</h2>
 						<p className="mt-4 leading-relaxed text-muted-foreground">{m.vision_body()}</p>
+						<div className="mt-6 border-l-4 border-primary pl-5">
+							<p className="text-lg font-semibold">{m.vision_quote_1()}</p>
+							<p className="text-lg font-semibold text-primary">{m.vision_quote_2()}</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -129,6 +140,11 @@ function Landing() {
 					<div>
 						<p className="text-sm font-medium">{m.footer_tagline()}</p>
 						<p className="mt-1 text-xs text-muted-foreground">{m.footer_disclaimer()}</p>
+						<p className="mt-1 text-xs text-muted-foreground">
+							{m.footer_name_meaning()} <em>kataba</em> (<bdi dir="rtl">كتب</bdi>){" "}
+							{m.footer_name_arabic()}, <em>katav</em> (<bdi dir="rtl">כתב</bdi>){" "}
+							{m.footer_name_hebrew()}.
+						</p>
 					</div>
 					<a
 						href={REPO_URL}
