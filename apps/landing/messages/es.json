@@ -39,7 +39,7 @@
 	"principle2_title": "Nada sin firma",
 	"principle2_body": "El registro final siempre es del médico: revisa, edita y aprueba el borrador. Nada entra en la historia clínica sin su firma.",
 	"principle3_title": "El dato clínico se queda donde debe",
-	"principle3_body": "Captura solo con consentimiento explícito, audio bajo control del médico, la opción de ejecutarlo todo en su propio entorno (on-premise) y datos sintéticos en demos y pruebas. LGPD por arquitectura, no por aviso legal.",
+	"principle3_body": "Captura solo con consentimiento explícito, audio bajo control del médico, self-hosting disponible mediante acuerdo y datos sintéticos en demos y pruebas. LGPD por arquitectura, no por aviso legal.",
 	"principle4_title": "Independiente del canal",
 	"principle4_body": "Presencial, teleconsulta o teléfono. Sin lock-in y sin cambiar el flujo del médico.",
 	"who_title": "Para quién es",

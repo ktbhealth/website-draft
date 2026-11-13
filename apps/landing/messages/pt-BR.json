@@ -39,7 +39,7 @@
 	"principle2_title": "Nada sem assinatura",
 	"principle2_body": "O registro final é sempre do médico: ele revisa, edita e aprova o rascunho. Nada entra no prontuário sem assinatura.",
 	"principle3_title": "O dado clínico fica onde deveria",
-	"principle3_body": "Captura só após consentimento explícito, áudio sob controle do médico, opção de rodar 100% no próprio ambiente (on-premise) e dados sintéticos na demo e nos testes. LGPD por arquitetura, não por disclaimer.",
+	"principle3_body": "Captura só após consentimento explícito, áudio sob controle do médico, self-hosting disponível mediante acordo e dados sintéticos na demo e nos testes. LGPD por arquitetura, não por disclaimer.",
 	"principle4_title": "Independente de canal",
 	"principle4_body": "Presencial, teleconsulta ou telefone. Sem lock-in e sem mudar o fluxo do médico.",
 	"who_title": "Para quem é",

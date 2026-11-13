@@ -39,7 +39,7 @@
 	"principle2_title": "Nothing without a signature",
 	"principle2_body": "The final record always belongs to the physician, who reviews, edits and approves the draft. Nothing enters the medical record without a signature.",
 	"principle3_title": "Clinical data stays where it belongs",
-	"principle3_body": "Capture only after explicit consent, audio under the physician’s control, the option to run fully in your own environment (on-premise), and synthetic data in demos and tests. LGPD by architecture, not by disclaimer.",
+	"principle3_body": "Capture only after explicit consent, audio under the physician’s control, self-hosting available by arrangement, and synthetic data in demos and tests. LGPD by architecture, not by disclaimer.",
 	"principle4_title": "Channel-agnostic",
 	"principle4_body": "In person, teleconsultation or phone. No lock-in and no change to the physician’s workflow.",
 	"who_title": "Who it is for",
